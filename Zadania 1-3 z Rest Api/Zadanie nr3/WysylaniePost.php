@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $context = stream_context_create($contextOptions);
 
-        $url = 'https://jsonplaceholder.typicode.com/posts'; // Исправлен URL
+        $url = 'https://jsonplaceholder.typicode.com/posts'; 
         $response = file_get_contents($url, false, $context);
 
         echo $response;
